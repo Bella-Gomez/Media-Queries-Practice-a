@@ -7,6 +7,10 @@ Author: Isabella Gomez
 
 * { box-sizing: border-box; }
 
+body{
+    background-color:aliceblue;
+}
+
 [class^="box"] {
   color:white;
   font-size: 50px;
@@ -16,8 +20,17 @@ Author: Isabella Gomez
   margin-bottom: 1rem;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    border: 10px solid rgb(201, 66, 95);
+}
+
 .box1 { 
-    width: 99,4%; 
+    width: 99.4%; 
     margin-top: 1rem;
     background:#1abc9c
     }
@@ -58,11 +71,68 @@ Author: Isabella Gomez
      background:#16a085;
     }
 
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around;
-    border: 10px solid rgb(201, 66, 95);
+@media screen and (max-width: 1024px) {
+    body{
+        background-color: #cff1eb;
+    }
+    [class^="box"] {
+        color:rgb(128, 96, 96);
+        font-size: 50px;
+        text-align: center;
+        text-shadow:4px 4px 0 rgba(0,0,0,0.1);
+        padding:10px;
+        margin-bottom: 1rem;
+      }
+      
+      .flex-container {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          align-content: space-around;
+          border: 10px solid rgb(201, 66, 95);
+      }
+      
+      .box1 { 
+          width: 99.4%; 
+          margin-top: 1rem;
+          background:#1abc9c
+          }
+      .box2 { 
+          width: 49.4%; 
+          background:#3498db;
+          }
+      .box3 { 
+          width: 49.4%;
+          background:#9b59b6;
+          }
+      .box4 { 
+          width: 49.4%;
+          background:#34495e;
+          }
+      .box5 { 
+          width: 49.4%;
+          background:#f1c40f;
+          }
+      .box6 { 
+          width: 49.4%;
+          background:#e67e22; 
+          }
+      .box7 { 
+          width: 24.4%;
+          background:#e74c3c;
+          }
+      .box8 {
+          width: 24.4%;
+           background:#bdc3c7;
+          }
+      .box9 { 
+          width: 24.4%;
+          background:#2ecc71;
+          }
+      .box10 {
+          width: 24.4%;
+           background:#16a085;
+          }
+
 }
